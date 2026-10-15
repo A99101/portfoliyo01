@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadarsh | Developer Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+background:linear-gradient(135deg,#000,#0f2027);
+color:#fff;
+}
+
+/* Navbar */
+.navbar{
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(15px);
+}
+.navbar-brand{
+color:#00ff9c!important;
+font-weight:600;
+}
+.nav-link{
+color:#fff!important;
+margin-left:15px;
+}
+.nav-link:hover{
+color:#00ff9c!important;
+}
+
+/* Glass */
+.glass{
+background:rgba(255,255,255,0.08);
+border-radius:20px;
+backdrop-filter:blur(20px);
+box-shadow:0 0 40px rgba(0,255,156,0.2);
+padding:40px;
+}
+
+/* Hero */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+}
+.hero img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 30px #00ff9c;
+}
+.highlight{
+color:#00ff9c;
+}
+
+/* Skills */
+.skill-card{
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+padding:20px;
+transition:0.4s;
+}
+.skill-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px #00ff9c;
+}
+
+/* Contact */
+.contact a{
+color:#00ff9c;
+text-decoration:none;
+}
+
+/* Footer */
+footer{
+background:#000;
+padding:15px;
+text-align:center;
+color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#home">Portfolio</a>
+<button class="navbar-toggler bg-success" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div class="container">
+<div class="row align-items-center glass" data-aos="fade-up">
+<div class="col-md-6">
+<h1>Hi, I'm <span class="highlight">Aadarsh</span></h1>
+<h3>I am a <span id="element" class="highlight"></span></h3>
+<p class="mt-3">
+Passionate python developer excited to learn more things
+</p>
+</div>
+<div class="col-md-6 text-center">
+<img src="ap.png.jpg" alt="Aadarsh">
+</div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+<div class="container glass" data-aos="fade-right">
+<h2 class="highlight text-center mb-4">About Me</h2>
+<p class="text-center">
+I am <span class="highlight">Aadarsh</span>, a passionate python Developer.
+I love to learn more
+<br><br>
+My aim is to become a successful python developer and give my best to your company
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5">
+<div class="container">
+<h2 class="text-center highlight mb-4" data-aos="zoom-in">My Skills</h2>
+<div class="row g-4">
+<div class="col-md-3" data-aos="flip-left">
+<div class="skill-card text-center"> basic - C & C++</div>
+</div>
+<div class="col-md-3" data-aos="flip-left">
+<div class="skill-card text-center">Pythton Developer</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+<div class="container glass contact" data-aos="fade-up">
+<h2 class="highlight text-center mb-4">Contact Me</h2>
+<p>📞 Mobile: <a href="tel:9098206140">9098206140</a></p>
+<p>📧 Email: <a href="mailto:aadarshpatel8085@gmail.com">aadarshpatel8085@gmail.com</a></p>
+<p>📷 Instagram:
+<a href="https://instagram.com/aadarsh_patel__1" target="_blank">
+@aadarsh_patel__1
+</a>
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Aadarsh | Developer Portfolio
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+AOS.init({duration:1200,once:true});
+
+new Typed('#element',{
+strings:['python Developer'],
+typeSpeed:70,
+backSpeed:40,
+loop:true
+});
+</script>
+
+</body>
+</html>
